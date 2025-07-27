@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Registration</title>
+    </head>
+<body style="font-family: Arial, sans-serif; background: #f9f9f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
+    <div class="container" style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 350px; text-align: center;">
+        <div class="tabs" style="margin-bottom: 20px; font-size: 18px; display: flex; justify-content: center;">
+            <span class="active" style="font-weight: bold;">Login</span>
+            <span class="divider" style="color: #ccc; margin: 0 10px;">|</span>
+            <span class="green" style="color: #2e7d32; cursor: pointer;">Register</span>
+        </div>
+        <p>Enter your email and password to register.</p>
+        <form id="registerForm">
+            <input type="text" placeholder="Username" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;" />
+            <input type="email" placeholder="Enter your email address" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;" />
+
+            <div class="password-field" style="position: relative; margin-bottom: 10px;">
+                <input type="password" placeholder="Password" id="password" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; padding-right: 35px;" />
+                <span class="eye-icon" id="togglePassword" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; font-size: 18px; color: #555;">👁️</span>
+            </div>
+
+            <div class="password-field" style="position: relative; margin-bottom: 10px;">
+                <input type="password" placeholder="Confirm Password" id="confirmPassword" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; padding-right: 35px;" />
+                <span class="eye-icon" id="toggleConfirmPassword" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; font-size: 18px; color: #555;">👁️</span>
+            </div>
+
+            <button type="submit" style="width: 100%; padding: 12px; background: #2e7d32; color: white; font-size: 16px; border: none; border-radius: 6px; cursor: pointer; margin-top: 10px;">Register</button>
+        </form>
+    </div>
+    <script>
+        const togglePassword = document.getElementById('togglePassword');
+        const passwordInput = document.getElementById('password');
+
+        togglePassword.addEventListener('click', () => {
+            const type = passwordInput.type === 'password' ? 'text' : 'password';
+            passwordInput.type = type;
+            togglePassword.textContent = type === 'password' ? '👁️' : '🙈';
+        });
+
+        const toggleConfirm = document.getElementById('toggleConfirmPassword');
+        const confirmInput = document.getElementById('confirmPassword');
+
+        toggleConfirm.addEventListener('click', () => {
+            const type = confirmInput.type === 'password' ? 'text' : 'password';
+            confirmInput.type = type;
+            toggleConfirm.textContent = type === 'password' ? '👁️' : '🙈';
+        });
+    </script>
+</body>
+</html>
