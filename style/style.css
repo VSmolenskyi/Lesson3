@@ -1,0 +1,148 @@
+body{
+background: #EFEFF2;
+margin : 0;
+color: #19191C;
+font: 400 18px/28px Inter, sans-serif; 
+}
+.container {
+    padding: 0 15px;
+     width: 1340px; 
+    margin: 0 auto;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    padding: 38px 0 0;
+}
+.header {
+    display: flex;
+    padding: 36px 0 0;
+    justify-content: space-between;
+}
+
+.header__box {
+    display: flex;
+    align-items: center;
+    gap: 68px;
+    margin-left:60px;
+}
+
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 48px;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 22px;
+}
+
+.nav__link {
+    color: #19191c;
+    text-decoration: none;
+}
+
+
+.logo {
+    font-weight: 80px;
+    font-size: 24px;
+    line-height: 29px;
+    align-items: center;
+    color: #19191c;
+    display: flex;
+    gap: 14px;
+    text-decoration: none;
+    transition: color 0.4s ease;
+}
+
+.logo img {
+    width: 40px;
+    height: 40px;
+}   
+
+.learn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #19191c;
+    padding: 168px 0 159px;
+}
+
+.learn__text {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+   
+}
+
+.learn__title {
+    font-size: 3.22rem;
+    font-weight: 600;
+    line-height: 3.95rem;
+    margin: 0 0 28px;
+    color: #fbfbfc;
+}
+
+.learn__description {
+    color: #efeff2;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 0 0 24px;
+    text-align: left;
+}
+
+.learn-container
+{
+    padding: 0 15px 
+}
+
+
+
+.learn__counter-item {
+    width: 178px;
+    display: flex;
+    flex-direction: column;
+    margin: 0;   
+}
+
+
+
+.learn__counter-number {
+    display: flex;
+    margin: 0;
+    font-size: 58px;
+    font-weight: 700;
+    line-height: 70px;
+    color: #fbfbfc;
+}
+
+.learn__counter__description {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 28px;
+    margin: 27px 0 0;
+    color: #efeff2;
+    position: relative;
+    text-align: left;
+}
+
+
+
+.discover__list {
+    display: flex;
+    list-style: none;
+    gap: 80px;
+    padding: 10px;
+    margin: 45px;
+}
+
+
+
+.footer {
+    min-height: 64px;
+}
+
+
+

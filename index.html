@@ -1,53 +1,91 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
+  <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Registration</title>
-    </head>
-<body style="font-family: Arial, sans-serif; background: #f9f9f9; display: flex; justify-content: center; align-items: center; height: 100vh; margin: 0;">
-    <div class="container" style="background: white; padding: 30px; border-radius: 8px; box-shadow: 0 0 10px rgba(0,0,0,0.1); width: 350px; text-align: center;">
-        <div class="tabs" style="margin-bottom: 20px; font-size: 18px; display: flex; justify-content: center;">
-            <span class="active" style="font-weight: bold;">Login</span>
-            <span class="divider" style="color: #ccc; margin: 0 10px;">|</span>
-            <span class="green" style="color: #2e7d32; cursor: pointer;">Register</span>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style/style.css">
+    <title>Резюме Смоленського Вадима</title>
+  </head>
+  <body>
+    <header class="header container">
+      <div class="header__box">
+        <a class="logo" href="index.html">
+          <img src="./img/logo.png" alt="Smolenskyi Logo">
+          Smolenskyi
+        </a>
+        <nav class="nav">
+          <ul class="nav__list">
+            <li>
+              <a class="nav__link" href="#" title="Переход на страницу Опыт"
+                >Досвiд</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#" title="Переход на страницу Обо мне"
+                >Про мене</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#" title="Переход на страницу Знания"
+                >Знання</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#" title="Переход на страницу Хобби"
+                >Хоббi</a
+              >
+            </li>
+            <li>
+              <a class="nav__link" href="#" title="Переход на страницу Скилы"
+                >Скiли</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <main>
+      <section class="learn">
+        <div class="learn-container">
+          <div class="learn__text">
+            <h1 class="learn__title">Всё, что Вы хотели обо мне узнать</h1>
+            <h2 class="learn__description">
+              15 лет опыта в сфере маркетинга. 5 лет управления. Комплексный
+              подход от семантического ядра до выхода на новые рынки.
+            </h2>
+            <h3 class="learn__description">
+              Ответственное отношение к каждому проекту. Тщательный анализ
+              специфики каждого продукта и проекта. 
+              Понимание аспектов сотрудничества и консультация по всем возникшим вопросам.
+            </h3>
+          </div>
         </div>
-        <p>Enter your email and password to register.</p>
-        <form id="registerForm">
-            <input type="text" placeholder="Username" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;" />
-            <input type="email" placeholder="Enter your email address" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box;" />
-
-            <div class="password-field" style="position: relative; margin-bottom: 10px;">
-                <input type="password" placeholder="Password" id="password" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; padding-right: 35px;" />
-                <span class="eye-icon" id="togglePassword" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; font-size: 18px; color: #555;">👁️</span>
-            </div>
-
-            <div class="password-field" style="position: relative; margin-bottom: 10px;">
-                <input type="password" placeholder="Confirm Password" id="confirmPassword" required style="width: 100%; padding: 12px; margin: 10px 0; border: 1px solid #ddd; border-radius: 6px; box-sizing: border-box; padding-right: 35px;" />
-                <span class="eye-icon" id="toggleConfirmPassword" style="position: absolute; right: 10px; top: 50%; transform: translateY(-50%); cursor: pointer; font-size: 18px; color: #555;">👁️</span>
-            </div>
-
-            <button type="submit" style="width: 100%; padding: 12px; background: #2e7d32; color: white; font-size: 16px; border: none; border-radius: 6px; cursor: pointer; margin-top: 10px;">Register</button>
-        </form>
-    </div>
-    <script>
-        const togglePassword = document.getElementById('togglePassword');
-        const passwordInput = document.getElementById('password');
-
-        togglePassword.addEventListener('click', () => {
-            const type = passwordInput.type === 'password' ? 'text' : 'password';
-            passwordInput.type = type;
-            togglePassword.textContent = type === 'password' ? '👁️' : '🙈';
-        });
-
-        const toggleConfirm = document.getElementById('toggleConfirmPassword');
-        const confirmInput = document.getElementById('confirmPassword');
-
-        toggleConfirm.addEventListener('click', () => {
-            const type = confirmInput.type === 'password' ? 'text' : 'password';
-            confirmInput.type = type;
-            toggleConfirm.textContent = type === 'password' ? '👁️' : '🙈';
-        });
-    </script>
-</body>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="discover__box">
+        <ul class="discover__list">
+          <li>
+            <a href="#" title="Переход на страницу Портфолио">Портфолiо</a>
+          </li>
+          <li>
+            <a href="#" title="Переход на страницу Карта сайта">Карта сайта</a>
+          </li>
+          <li>
+            <a href="#" title="Переход на страницу Контакты">Контакти</a>
+          </li>
+          <li>
+            <a href="#" title="Переход на страницу Сертификаты">Сертiфiкати</a>
+          </li>
+          <li>
+            <a href="#" title="Переход на страницу пожертвования">
+              Задонатити</a>
+          </li>
+          <li>
+            <a href="#" title="Переход на страницу Галерея">Галерея</a>
+          </li>
+        </ul>
+      </div>
+    </footer>
+  </body>
 </html>
